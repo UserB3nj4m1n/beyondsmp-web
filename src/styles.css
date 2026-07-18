@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --mc-green: #5da031; /* Grass Green */
+  --mc-dark-green: #3e6a21;
+  --mc-dirt: #866043; /* Dirt Brown */
+  --mc-dark-dirt: #5d432e;
+  --mc-stone: #7a7a7a;
+  --mc-gold: #ffaa00;
+  --mc-white: #ffffff;
+  --mc-black: #000000;
+  --bg-dark: #3d2b1f; /* Dark Dirt */
+  --panel-bg: rgba(61, 43, 31, 0.9);
+  --border-size: 4px;
+  --font-discord: 'Inter', 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-minecraft: 'Minecraft', 'Courier New', Courier, monospace;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://db.onlinewebfonts.com/t/c1f964082269c366965b6f3b06927a44.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--mc-white);
+  font-family: var(--font-discord);
+  line-height: 1.5;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/scenery_image_from_server_square.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.mc-button {
+  background-color: var(--mc-dirt);
+  border: var(--border-size) solid var(--mc-black);
+  border-right-color: var(--mc-dark-dirt);
+  border-bottom-color: var(--mc-dark-dirt);
+  border-left-color: #a67c5d;
+  border-top-color: #a67c5d;
+  color: var(--mc-white);
+  padding: 10px 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px var(--mc-black);
+  font-family: var(--font-discord);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.1s;
+}
+
+.mc-button:hover {
+  background-color: var(--mc-green);
+  border-left-color: var(--mc-dark-green);
+  border-top-color: var(--mc-dark-green);
+  border-right-color: #7eba4d;
+  border-bottom-color: #7eba4d;
+}
+
+.mc-panel {
+  background-color: var(--panel-bg);
+  border: var(--border-size) solid var(--mc-black);
+  padding: 20px;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+  border-top: var(--border-size) solid var(--mc-green); /* Grass top effect */
+}
+
+h1, h2, h3 {
+  text-shadow: 2px 2px var(--mc-black);
+  color: var(--mc-gold);
+  font-family: var(--font-discord);
+  font-weight: 800; /* Extra bold for titles */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #00a8fc; /* Discord-like blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
