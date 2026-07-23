@@ -23,7 +23,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
           <div class="map-container">
             <iframe [src]="mapUrl" width="100%" height="300" frameborder="0"></iframe>
           </div>
-          <p>Alebo si otvor mapu v novom okne: <a href="https://map.beyondsmp.online" target="_blank">Otvor mapu</a></p>
+          <p>Alebo si otvor mapu v novom okne: <a [href]="mapUrl" target="_blank">Otvor mapu</a></p>
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@ export class CommunityComponent {
   mapUrl: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl('https://map.beyondsmp.online');
+    this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl('http://34.118.26.74:8100');
   }
 
   joinDiscord() {

@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+java @user_jvm_args.txt @libraries/net/neoforged/neoforge/21.1.231/unix_args.txt "$@"

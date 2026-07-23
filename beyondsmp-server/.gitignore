@@ -1,0 +1,16 @@
+# Minecraft Server ignores
+world/
+logs/
+crash-reports/
+*.jar
+.fabric/
+eula.txt
+backups/
+libraries/
+versions/
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+usercache.json
+server.properties
